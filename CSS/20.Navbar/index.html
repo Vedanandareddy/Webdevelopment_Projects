@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+
+        .navbar{
+            /* width: 50vw; */
+            margin-top: 25px;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* border: 2px solid black; */
+
+            
+        }
+        ul>li{
+            list-style: none;
+        }
+        .nav{
+ 
+            display: flex;
+            gap: 25px;
+            justify-content: flex-end;
+            font-family: "Segoe UI";
+        }
+        .logo{
+            width: 175px;
+        }
+        .nav li{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width :1000px){
+            .navbar{
+                justify-content: flex-start;
+            }
+            .nav{
+                display: none;
+            }
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img  class="logo" src="UE-Logo-1.webp" alt="">
+
+        <ul class="nav">
+            <li>Products <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" color="#000000" fill="none">
+                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></li>
+            <li>For business <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></li>
+            <li>Support <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></li>
+            <li>Our company <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></li>
+            <li>Resources<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg></li>
+            <li><img src="Lang.png" alt=""></li>
+        </ul>
+    </div>
+    
+</body>
+</html>

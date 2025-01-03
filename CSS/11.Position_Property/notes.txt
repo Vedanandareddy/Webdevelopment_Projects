@@ -1,0 +1,10 @@
+position property is usually set to static so the top , bottom ,Z index cant be used 
+if position property set to relative changes its position relative to its usual positon when static.
+z-index determines which element should be top if clash occurs 
+
+postion absolute determines its positon based on positioned elements ,checks if its parent has position and if not  goes to its ancestors untill it finds a positioned elment 
+Exception: transform, filter, or perspective properties can also make an element appear as positioned 
+
+position fixed fixes its position in the page based on the coordinates given or based on where the element is when loaded and is treated as individual element not in relation to other elements in the page
+
+position sticky acts as a static untill it scrolled up and acts as a fixed element after that point if postion mentioned used mainly for maintaining navbars in the website

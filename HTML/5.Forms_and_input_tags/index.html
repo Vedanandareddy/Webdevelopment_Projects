@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Lets learn it</title>
+</head>
+
+<body>
+    <h1>Form to apply for Sigma Web Development course - TA </h1>
+    <form action="intended end point" method="post">
+        <!-- submits the data of the form to your specified end point -->
+        <div>
+            <label for="username">Username</label>
+            <!-- for connects with id of a form element -->
+            <input type="text" id="username" name="username" placeholder="Enter your username" autofocus>
+            <!-- placeholder shown if no text is entered in the textbox and autofocus keeps focus on the text box when the site is launched -->
+             <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <!-- same name given to both radio buttons so that only one is selected at a time -->
+        </div>
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        <div>
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+        </div>
+
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+          </select>
+        </div>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>

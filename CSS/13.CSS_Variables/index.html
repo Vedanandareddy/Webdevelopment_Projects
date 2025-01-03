@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables</title>
+    <style>
+        :root{
+            --color:rgba(8, 230, 23, 0.845);
+            --seccolor:rgb(115, 224, 135);
+            --defpadding:20px;
+            /* other values can also have css variables so they are reflected globally by minimal changes */
+
+
+        }
+
+
+        *{
+            margin: 0;
+            padding: 0;
+        
+        }
+
+        .nav{
+            background-color: var(--color);
+            /* using css variables */
+        }
+
+        ul li{
+            list-style: none;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+
+        }
+        ul{
+            display: flex;
+
+        }
+
+        .text{
+            /* local variables overwrite global variables */
+            --seccolor:red;
+            background-color: var(--seccolor);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- in CSS variables can be used where you want the same value many times and these variables can used to change the design or theme of the website by changing them once instead of multiple places they are present in. IN css variables are declared in root of the style sheet -->
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere expedita reprehenderit ea, inventore, nam necessitatibus ad doloribus cupiditate officiis qui saepe vero totam esse delectus at quidem voluptate et laborum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum enim minus quod nulla consequuntur labore blanditiis velit, ipsa, dolor harum provident ipsum odit cupiditate libero dolorem facere facilis ex beatae molestias similique! Necessitatibus sint exercitationem corrupti officiis atque, laborum, sed illo unde sapiente dolore commodi!</p>
+    </div>
+        
+</body>
+</html>

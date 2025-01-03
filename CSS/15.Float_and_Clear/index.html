@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+
+        .cards{
+            border: 2px solid black;
+
+
+            /* floating images usually overflow  */
+            display: flow-root;
+            /* avoids overflow of floating elements  */
+
+
+        }
+        img{
+            width: 400px;
+            /* float: left; */
+            float: right;
+
+            /* by floating left it allows elements on the right side  */
+        }
+
+
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: right;
+            /* clear doesnot allow elements to float on specified direction  */
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Float and clear are not recommended to use in building mordern layout as flex box is a better and easy way to do this  -->
+
+
+    <div class="cards">
+        <img src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="">
+        <div class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium placeat repellat vitae alias cumque. Cumque, quis aliquid molestias vero deserunt provident obcaecati? Hic accusantium odit accusamus ullam blanditiis incidunt consectetur nisi minus doloribus unde! Ea, quos magni. Officia ea tenetur, tempora assumenda recusandae aperiam quo sunt deleniti fugiat eos quas numquam voluptatem, ab animi cupiditate autem. Adipisci, tenetur commodi id eius quaerat temporibus, repellat accusantium nostrum illum sapiente eos enim corrupti tempora explicabo quas cupiditate, consequatur perferendis odit modi nesciunt quos. Animi quia doloremque accusantium? Suscipit, magnam possimus impedit, expedita eaque saepe consequatur quidem aliquam omnis ut excepturi quos non.</div>
+        <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe numquam illo omnis vitae veritatis blanditiis commodi reiciendis sint similique aliquam voluptatem, quae minima. Modi excepturi reiciendis quasi? Quam praesentium esse neque debitis eligendi, quos, fugiat ducimus mollitia animi optio ipsum placeat culpa, nihil eius error soluta commodi hic incidunt omnis temporibus enim similique? Quod, veritatis. Sed, sapiente fugiat? Deserunt molestiae, nisi officiis expedita placeat, distinctio natus accusamus earum temporibus architecto minima incidunt autem. Perferendis molestiae corporis sed tenetur temporibus placeat est eveniet, cum accusamus facere, dicta, excepturi amet provident dolores suscipit quos ut cumque. Libero, ut a officia excepturi voluptatum harum saepe blanditiis sint itaque deleniti dolores pariatur eum deserunt. Saepe dicta autem excepturi neque culpa maiores illum esse quod iusto, nam est sed, nulla iure consequatur! Soluta, deleniti! Nobis, autem. Aspernatur saepe quidem suscipit sunt sapiente minima ipsam tempora, quos corporis incidunt sint enim tenetur, aperiam reprehenderit quod possimus molestias similique nemo quae. Sunt odio beatae, qui vitae voluptas eligendi. Obcaecati amet porro deleniti impedit at </div>
+        <div class="card">Card3</div>
+    </div>
+    
+</body>
+</html>

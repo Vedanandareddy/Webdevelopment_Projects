@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .navbar{
+            /* position: sticky; */
+            /* top: 0px; */
+            /* box-sizing: border-box; */
+            /* margin: auto; */
+            /* height: 100px; */
+        }
+
+        ul{
+            display: flex;
+            background-color: rgb(131, 131, 190) ;
+        }
+
+        ul>li{
+            list-style: none;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgb(131, 131, 190) ;
+        }
+
+        .sections{
+            width: 90vw;
+            height: 95vh;
+            background-color: blueviolet;
+            display: flex;
+            box-sizing: border-box;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .section{
+            width: 40vw;
+            height: 30vw;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        .section1{
+            background-color: green;
+        }
+        .section2{
+            background-color: yellow;
+        }
+
+        img{
+            display: block;
+            position: fixed;
+            width: 100px;
+            bottom: 0px;
+            right: 0px;
+            margin: auto;
+            border-radius: 100%;
+        }
+
+        .circularbox{
+            height: 30vh;
+            width: 80vw;
+            background-color: aqua;
+            text-align: center;
+            margin: 129px;;
+            padding: 100px;
+            border-radius: 220px;
+            box-sizing: border-box;
+            
+        }
+
+        .para{
+            font-size: 50px;
+        }
+
+        .footer{
+            width: 90vw;
+            box-sizing: border-box;
+            background-color: brown;
+            height: 10vh;
+            text-align:center;
+            margin: auto;
+            padding:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="sections">
+        <div class="section section1"></div>
+        <div class="section section2"></div>
+    </div>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZbZJ6xZ1QcdSrFQP9-0F3aY_USXc7jB3_AywWhvYCdSoZXfxzybLTPaAnMQ6nx0IMSVs&usqp=CAU" alt="">
+
+    <div class="circularbox"><p class="para">Welcome to Sigma Web Development course</p> </div>
+
+    <div class="footer"> This is a footer</div>
+
+
+
+
+    
+</body>
+</html>

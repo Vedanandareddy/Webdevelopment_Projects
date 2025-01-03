@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries </title>
+    <style>
+        body {
+            background-color: red;
+        }
+        .box{
+            display: flex;
+        }
+
+        .boxes{
+            width: 400px;
+            height: 400px;
+            background-color: yellow ;
+            margin: 20px;
+        }
+
+        @media  screen and (orientation: landscape){
+            /* 'landscape' if width greater than height and 'potrait' when height greater than width */
+            .boxes{
+                border: 2px solid black;
+            }
+
+        }
+        @media only screen and (max-width :455px){
+            body{
+                background-color: green;
+            }
+
+            .box{
+                flex-direction: column;
+            }
+        }
+
+        /* max-width determines that this condition can be applied if its maximum width is less than given parameter
+        min-width determines that this condition can be applied if its minimum width is greater than given parameter */
+
+        
+
+        /* @media not|only mediatype and (expressions) {
+            CSS-Code;
+        } */
+
+        /* above is the syntax of media query */
+        /* media types for this query Media Type Description all Suitable for all media devices. print Used for printers. 
+        screen Targeted at computer screens,tablets,smartphones,etc. 
+        speech Designed for screen readers that read the content aloud. */
+        /* expressions contain constraints or conditions */
+
+
+        /* break points used to determine different device types and aimed to design the site for them using media queries */
+
+    </style>
+</head>
+
+<body>
+    <!-- Media queries used to style the site for different types of media devices by applying various constraints related to them -->
+
+    <!-- used to make responsive design so that they can look good in multiple devices -->
+    <div>I am a red body site</div>
+    <div class="box">
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+    </div>
+
+</body>
+
+</html>

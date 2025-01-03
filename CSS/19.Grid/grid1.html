@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid 1</title>
+    <style>
+        .container {
+            width: 80vw;
+            height: 100vh;
+            border: 2px solid black;
+            display: grid;
+            /* grid-template-columns: [firstc]200px  [secondc]auto [thirdc]200px [fourthc]; 
+            grid-template-rows: [firstr]100px [secondr]100px [thirdr] 100px; */
+            /* defines no of rows and no of colums needed to be in the grid and lines can be named by the user */
+
+            grid-template-columns: repeat(4, 1fr);
+            /* 1fr refer to 1fraction of the container that is divided between the given number columns and the ratio of size of the columns is calculated in the form of 1fr  */
+            grid-template-rows: repeat(2,minmax(100px,1fr));
+            /* this defines that the minsize should be 100px and the maximum size should be 1fr and if 1fr is smaller than 100px it overwritten and size is taken as 100px  */
+
+
+
+
+            /* grid-template-columns: repeat(4,100px); 
+            grid-template-rows: repeat(2,100px); */
+            /* repeat function used to repeat a property multiple times  */
+
+
+
+
+            justify-items: center;
+            align-items: center;
+            /* justify items and align items are used to align the items in their own cells  */
+
+
+            /* justify-content: center;    
+            align-content: center;         */
+            place-content: center;
+            /* shorthand for both justify and align content properties  */
+
+            /* when the grid is significantly smaller than  the container justify-content and align content can be used align the whole grid in the container  */
+        }
+
+
+        .item {
+            height: 80px;
+            width: 80px;
+            border: 2px solid red;
+        }
+
+        .item-1 {
+
+            background-color: aqua;
+
+        }
+
+        .item-2 {
+
+            background-color: blueviolet;
+        }
+
+        .item-3 {
+
+            background-color: rgb(191, 116, 23);
+        }
+
+        .item-4 {
+
+            background-color: rgb(196, 58, 90);
+        }
+
+        .item-5 {
+            background-color: chartreuse;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+    </div>
+
+</body>
+
+</html>

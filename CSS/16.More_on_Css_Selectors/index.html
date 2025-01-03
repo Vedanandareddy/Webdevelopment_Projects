@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selectors</title>
+    <style>
+        /* .box:nth-child(2){
+            background-color: blue;
+        } */
+        /* this states that if box is nth child of an element then apply this property  */
+
+
+        /* .box::first-line{
+            color: brown;
+        } */
+        /* this selects the first line which is displayed on the device  */
+
+
+
+
+        /* .boxes *{
+            color:blueviolet;
+            border:2px solid black;
+        } */
+        /* selects all elements inside the given class selector and applies given properties*/
+
+
+
+
+        /* p,a,.box, [data-color="paranormal"]{
+            background-color: aqua;
+        } */
+        /* above one displays grouping of selectors and attribute selectors  */
+
+
+
+        /* .box:nth-child(even){
+            background-color: red;
+        } */
+        /* here it states that if box is an even child of an element then apply these properties ,here counting starts from 1 */
+        /* simillarly for odd child  */
+        /* .box:nth-child(odd){
+            background-color: red;
+        } */
+
+
+        /* .box:nth-last-child(1){
+            background-color: green;
+        } */
+        /* counts number of child from last  */
+
+        .boxes::before{
+            content: "Hey this is Vedananda Reddy";
+        }
+        .boxes::after{
+            content: "Bye this is Vedananda Reddy";
+        }
+        /* before and after are pseudo elements and content property can be used to dynamically add content to these pseudo elements  */
+        /* content property only works on pseudo elements and is highly used  */
+
+        ::selection{
+            background-color: aqua;
+            color: red;
+        }
+        /* this propery is applied on selection  */
+
+        .box::first-letter{
+            color: blue;
+            font-size: 60px;
+        }
+
+
+        input::placeholder{
+            background-color: green;
+            color: aqua;
+        }
+        input{
+            background-color: blue;
+        }
+
+        /* styles can be applied on input tags and their elements like placeholders   */
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div  data-color="paranormal"  class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptates voluptatibus consectetur, inventore cumque, quasi dolorum quis maxime illo sit repellendus eos accusamus dolor at. Aut fuga ex nemo vitae? Dolor, inventore sed ad doloremque assumenda veniam, commodi rem voluptas nam saepe eveniet, tempora praesentium optio! Excepturi placeat dignissimos veritatis, quasi provident molestiae vel aliquam quidem deleniti, at impedit iure eum repudiandae ea velit ipsam magnam quisquam voluptas vitae cumque fuga? Qui, consequuntur eaque! Molestiae repellat corrupti esse nihil dolor quo voluptas illo expedita architecto, in fugiat odio distinctio recusandae ad quos dolore veniam iusto nam voluptate tenetur placeat voluptatibus nemo. Optio et obcaecati harum modi alias quos nemo distinctio ipsa dolores rem quisquam explicabo, pariatur deserunt vero deleniti eligendi sequi! Nesciunt ad culpa sequi voluptates tempore, veritatis deserunt odio fuga, dicta asperiores corporis exercitationem vero at iure enim dignissimos sint dolorum possimus? Ea animi maxime impedit magnam fugit voluptatibus tenetur error at eligendi vitae, quam, nemo sapiente repellat ex beatae vero perspiciatis ipsa. Saepe alias iste delectus maiores eos est, unde, autem, consequatur culpa minus deserunt aperiam vel sunt iusto placeat voluptates praesentium excepturi impedit qui esse quas rerum non ipsam! Deleniti voluptate ducimus voluptates illum repudiandae voluptatibus similique accusantium ea doloremque voluptatum ex soluta, eligendi iusto earum eos consequatur dolorum vel quasi odio numquam id dolorem molestiae harum. Harum expedita distinctio saepe quam consequatur provident recusandae nihil nisi eos maiores voluptatum asperiores deleniti ipsa, totam magnam minus, veritatis obcaecati magni odio dolorum ut? Culpa, dolorum. Soluta a, omnis eum aut tempore minima distinctio tempora modi, eveniet consectetur eaque ipsam excepturi. Praesentium corrupti, repellendus, eveniet perferendis voluptas sed sunt voluptates culpa beatae maiores odit est expedita officiis quae totam qui. Corrupti quas accusamus, illum ad in repellat perspiciatis repudiandae cum quo possimus quasi praesentium sunt a blanditiis inventore modi saepe doloremque vero laboriosam eum illo tenetur aperiam? Non enim voluptate, quia assumenda tempora delectus esse magnam itaque neque doloribus alias debitis corporis animi harum minus modi eius eos perspiciatis autem exercitationem! Tempore consequatur optio et assumenda eos aspernatur repudiandae est non vitae veniam fugit earum deleniti perspiciatis autem suscipit ipsa mollitia adipisci totam, officiis facilis nisi illo? Voluptatum omnis nam eligendi beatae fuga voluptas fugiat, est distinctio ex, impedit vitae amet. Eligendi, atque facilis. Necessitatibus ipsum perspiciatis quasi odit. Cupiditate iure harum tenetur dolorem facere, repudiandae modi sed ut enim ducimus quae odit officia? Adipisci sint ut cumque pariatur obcaecati necessitatibus. Omnis aspernatur ducimus aliquid amet quod neque, voluptatum incidunt sit necessitatibus sapiente sunt doloremque praesentium, officiis veritatis ipsam corrupti voluptas soluta dolor accusantium perferendis quibusdam tempore! In, enim. Reprehenderit, enim rerum praesentium quaerat libero temporibus voluptatum corrupti, esse at eum, placeat tenetur iure assumenda repellendus quod excepturi quasi.</div>
+        <div class="box">Hey this is Box2</div>
+        <div class="box">Hey this is Box3</div>
+    </div>
+
+    <input type="text" placeholder="Entere your name">
+
+    
+</body>
+</html>

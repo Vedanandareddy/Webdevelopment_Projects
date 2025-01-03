@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: flex;
+            height: 30vw;
+            /* default direction of flexbox is left to right and it is applied on container  */
+
+            /* justify-content: center; */
+            /* centers items along the main axis of the flex box where main axis is in the direction of flex direction  */
+            /* align-items: center;  */
+            /* used when only single line  */
+            /* centers items along cross axis of the flexbox where cross axis is perpendicular to the main axis  */
+            align-content: center;
+            /* used when multiple lines of items are present  */
+
+            /* justify-content and align-items  to center are most used properties of flexbox  and other properties of flexbox are flexstart and flexend */
+
+
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* direction of flex can also be determined  */
+
+
+            /* flex-wrap: wrap; */
+            /* if space is not enough and the items are leaking using wrap makes content wrapped inside by  adding it into another line along the flex direction  */
+
+            /* flex-flow: row wrap; */
+            /* used to write both flex direction and flex wrap at the sametime  */
+
+            /* gap: 40px; */
+            /* gives both row and colum gap  */
+
+            /* row-gap: 30px; */
+            /* gap between rows  */
+            /* column-gap: 10px; */
+
+            /* gap:30px 10px; */
+            /* shorthand for column and row gap  */
+            
+
+
+
+            /* these are flexbox container properties  */
+        }
+
+        .items{
+            /* flex-grow: 1; */
+            width: 80px;
+            height: 80px;
+            background-color: aqua;
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        .order-1{
+            order: 1;
+            /* higher the order backward the element is placed and the default order of an element is 0  */
+            /* flex-grow: 2; */
+            /* size of the element  grows compared to other elements  */
+
+            flex-shrink: 2;
+            /* when the items need to shrink it shrinks 2 times faster than other items  */
+
+            align-self:center; 
+            /* specific alignment of items can be changed using align-self  */
+
+        }
+
+        .order-2{
+            order: 2;
+            align-self: flex-end;
+        }
+
+        .order-3{
+            order: 3;
+        }
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items order-1">1</div>
+        <div class="items order-2">2</div>
+        <div class="items order-3">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+    </div>
+    
+</body>
+</html>

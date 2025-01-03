@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            border: 2px solid blue;
+            /* display property can change the default behaviour of an element to desired behaviour */
+            display: inline-block;
+            /* acts as inline when placed with other elements but behaves as a block element which has padding margin,border */
+            /* padding and margin top is not considered for inline elements and width and height can't be set on inline */
+            /* inline block is used to solve this problem */
+            width: 344px;
+            padding:45px;
+            margin: 34px; 
+        }
+
+        .box1{
+            /* display: none; */
+            /* removes the box and leaves no space */
+            /* visibility: hidden; */
+            /* hides the box and leaves space for it */
+        }
+
+        /* other display properties are flex and grid */
+        
+    </style>
+</head>
+
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">also a nice box</div>
+
+    <span>I am a good</span>
+    <span>boy</span>
+</body>
+
+</html>
