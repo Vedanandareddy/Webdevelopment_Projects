@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animations</title>
+    <style>
+        .container{
+            width: 50vw;
+            height: 50vh;
+            background-color: aqua;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* above are the various properties of animation  */
+
+
+            /* animation-name:Animation1 ; */
+            /* animations mentioned in keyframes are named like variables */
+
+
+            /* animation-duration: 4s; */
+            /* specifies the duration of animation  */
+
+
+            /* animation-timing-function: ease-in; */
+            /* timing function for the animation  */
+
+
+            /* animation-delay: 3s; */
+            /* specifies the delay after which the animation needs to start  */
+
+
+            /* animation-iteration-count: infinite; */
+            /* animation-iteration-count: 1; */
+            /* number of times the animation need to happen can be specified  */
+
+            /* animation direction properties  */
+
+            /* animation-direction: alternate; */
+            /* it alternates from start to end positions  */
+
+            /* animation-direction:alternate-reverse; */
+            /* alternates from end to start with initial position of animation at the end  */
+
+            /* animation-direction:reverse; */
+            /* animation starts from end to start  */
+
+
+
+            /* animation-play-state: paused; */
+            /* has two values paused and running,using java script it is paused when needed  */
+
+            /* usually when animation is applied it returns to its normal state after completion  */
+
+            /* animation-fill-mode: forwards ; */
+            /* by applying forwards it retains its final state without returning to initial state and from properties are applied after the delay */
+
+            /* animation-fill-mode: backwards; */
+            /* from rules are applied before completion of delay and returns to its usual position after the completion of the animation */
+
+            animation: Animation1 3s ease-in 3s 2 forwards  ,
+                       Animation2 3s ease-in 3s 2  ;
+                       /* comma seperated multiple animations  */
+
+
+        }
+
+        @keyframes Animation1 {
+            from{
+                background-color: yellow;
+
+            }
+            to{
+                /* background-color: rgb(238, 77, 3); */
+                transform: translateX(300px);
+
+            }
+            /* here from is to refered to the state at 0% and to is the state at 100%              */
+        }
+
+        @keyframes Animation2 {
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(90deg) ;
+            }
+            50%{
+                transform: rotate(180deg) ;
+            }
+            75%{
+                transform: rotate(270deg) ;
+
+            }
+            100%{
+                transform: rotate(360deg) translateX(400px);
+            }
+
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+
+    
+</body>
+</html>

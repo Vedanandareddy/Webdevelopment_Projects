@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid exercise</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                               "empty empty empty"
+                                "head head head"
+                                "hole hole hole"
+                                "box box box"
+                                "box box box"
+                                "box box box";
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+    
+
+        }
+
+        /* navigation bar  */
+        .navbar {
+            width: 1500px;
+            display: flex;
+            justify-content: space-around;
+            /* margin-top: 25px; */
+            align-items:center;
+            grid-area: nav;
+        }
+
+        .navbar ul>li {
+            list-style: none;
+        }
+
+        .nav {
+            width: 800px;
+            height: 100px;
+            display: flex;
+            justify-content: flex-end;
+            font-family: "Segoe UI";
+            gap: 30px;
+        }
+
+        .logo {
+            width: 175px;
+
+        }
+
+        .nav li {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+
+        .emp {
+            height: 120px;
+            grid-area: empty;
+        }
+
+
+
+
+        /* header of the page below navigation bar  */
+        .header {
+            width: 1039px;
+            display: flex;
+            grid-area: head;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .smalllogo img {
+            width: 50px;
+        }
+
+        .headtext {
+            display: flex;
+            align-items: center;
+        }
+
+
+
+
+
+
+
+        .hole {
+            height: 50px;
+            grid-area: hole;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* boxes which contain links for the usage of resources  */
+
+        .box{
+            grid-area: box;
+            display: flex;
+            gap: 25px;
+            width: 957px;
+            flex-wrap: wrap;
+            justify-content: start;
+        }
+
+        .boxes {
+            width: 270px;
+            height: 170px;
+            
+            background-color: #f9f9f9;
+            padding: 16px;
+            /* border: 2px solid black; */
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            gap: 25px;
+
+
+            
+        }
+
+        .download {
+            background-color: #5cb85c;
+            color: #fff;
+            padding: 8px 16px;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width :1000px){
+            .navbar{
+                justify-content: flex-start;
+            }
+            .nav{
+                display: none;
+            }
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="UE-Logo-1.webp" alt="">
+            <ul class="nav">
+
+                <li>Products <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                <li>For business <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                <li>Support <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                <li>Our company <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                <li>Resources<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li>
+                <li><img src="Lang.png" alt=""></li>
+            </ul>
+        </div>
+
+
+        <div class="emp"></div>
+
+
+
+
+
+        <div class="header">
+            <div class="smalllogo">
+                <img src="UE_logo_icon_white.png" alt="">
+            </div>
+            <div class="headtext">
+              <big>  Download UltraEdit &nbsp; </big>
+                <small> v2024.2 (released 2024-12-20) | Hotfix information </small>
+            </div>
+        </div>
+
+
+        <div class="hole"></div>
+
+
+
+        <div class="box">
+            <div class="boxes english">
+                <h3>English</h3>
+                <a  class="download" href="ue_english_64.exe">Download 64-bit</a>
+            </div>
+
+            <div class="boxes english">
+                <h3>English</h3>
+                <a  class="download" href="ue_english_64.exe">Download 64-bit</a>
+            </div>
+
+            <div class="boxes english">
+                <h3>English</h3>
+                <a  class="download" href="ue_english_64.exe">Download 64-bit</a>
+            </div>
+
+            <div class="boxes english">
+                <h3>English</h3>
+                <a  class="download" href="ue_english_64.exe">Download 64-bit</a>
+            </div>
+
+            <div class="boxes english">
+                <h3>English</h3>
+                <a  class="download" href="ue_english_64.exe">Download 64-bit</a>
+            </div>
+
+            <div class="boxes english">
+                <h3>English</h3>
+                <a  class="download" href="ue_english_64.exe">Download 64-bit</a>
+            </div>
+
+            <div class="boxes english">
+                <h3>English</h3>
+                <a  class="download" href="ue_english_64.exe">Download 64-bit</a>
+            </div>
+
+            <div class="boxes english">
+                <h3>English</h3>
+                <a  class="download" href="ue_english_64.exe">Download 64-bit</a>
+            </div>
+
+            <div class="boxes english">
+                <h3>English</h3>
+                <a  class="download" href="ue_english_64.exe">Download 64-bit</a>
+            </div>
+
+            <div class="boxes english">
+                <h3>English</h3>
+                <a  class="download" href="ue_english_64.exe">Download 64-bit</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

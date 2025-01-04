@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 1300px;
+            height: 70vh;
+            background-color: blue;
+            position: relative;
+        }
+
+        /* .ball {
+            width: 100px;
+            height: 100px;
+            background-color: chocolate;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            border-radius: 50%;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            animation:
+                horizontalAnimation 6s ease-in-out infinite,
+                verticalAnimation 1s cubic-bezier(0.25, 0.1, 0.25, 1) infinite alternate;
+        } */
+
+
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: chocolate;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            border-radius: 50%;
+            animation:
+            verticalAnimation 1s cubic-bezier(0.25, 0.1, 0.25, 1) infinite alternate,
+            horizontalAnimation 6s linear infinite alternate;
+        }
+
+        @keyframes horizontalAnimation {
+            from {
+            }
+
+            to {
+                left: 1200px;
+            }
+        }
+
+        @keyframes verticalAnimation {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-400px);
+            }
+        }
+
+        /* multiple transform properties should be written using transform shorthand property or else they will be overwritten by other  */
+
+
+        /* all transform effects should be combined and used in one line using multiple with different animations doesnot give desired effect */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball"> ball</div>
+    </div>
+
+</body>
+
+</html>

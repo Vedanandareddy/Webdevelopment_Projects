@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tansition</title>
+    <style>
+        .container{
+            background-color: bisque;
+            width: 50vw;
+            height: 50vh;
+        }
+
+        .box{
+            background-color: chocolate;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            text-align: center;
+
+
+            /* transition property is a combination of four properties  */
+
+            /* transition-property: background-color,transform; */
+            /* specifies what properties you want to apply transition  */
+
+            /* transition-duration: 4s; */
+            /* amount of time the transition should happen  */
+
+            /* transition-timing-function: ease-in-out; */
+            /* the way transition should be timed or paced  */
+
+            /* transition-delay: 2s; */
+            /* delay after which transition should happen  */
+
+            /* short hand notation for above transition property is  */
+            transition: background-color 4s ease-in-out 2s, transform 4s ease-in-out 2s;
+            /* while setting multiple properties they are seperated by comma like above  */
+
+
+
+        }
+
+        .translate{
+            background-color: blue;
+            transform: translateX(100px) translateY(100px) rotate(180deg) ;
+
+        }
+        /* using multiple transform properties should be done on the same line or else they will be overwritten by the second transform properties  */
+
+        
+    </style>
+</head>
+<body>
+    <!-- makes the transition from one state to another state smooth and visually appealing  -->
+
+    <div class="container">
+        <div class="box translate">box</div>
+    </div>
+    
+</body>
+</html>
