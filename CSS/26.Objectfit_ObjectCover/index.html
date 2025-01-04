@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objectfit and ObjectPosition</title>
+    <style>
+
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            /* background-color: blue; */
+
+
+            /* an image can also be used as background  */
+            background-image: url(https://cdn.pixabay.com/photo/2024/03/27/17/14/ai-generated-8659507_640.jpg);
+            background-position: top right;
+            /* background-position used to postion the image  */
+
+
+            /* if image is small compared to the container it repeats to cover the whole container  */
+
+            background-repeat: no-repeat;
+            /* this specifies that the image will not repeat  */
+            /* background-repeat:repeat-x; */
+            /* this specifies that it only repeats in x if small  */
+
+        }
+
+        img{
+            width: 300px;
+             height: 300px;
+            /* object-fit: cover; */
+            /* object-position: center right; */
+            /* object-position: top left; */
+            /* object-position: bottom left; */
+
+            /* object-fit covers the given image  or entirely fits in the box by cutting the image  and its own width rather than its parents width  */
+            /* this maintains its aspect ratio by cutting the image,we can specify which part of the image to be displayed  */
+
+            object-fit: contain;
+            /* object-position: center center ; */
+            /* fits the entire image and maintains its aspect ratio by leaving some space in specified coordinates  */
+            /* position used to position the contained image to left right top bottom and center  */
+
+            /* by default the objectfit has property fill which filts image in the given size by distorting the image if necessary  */
+
+        }
+    </style>
+</head>
+<body>
+        <div class="box">
+            <!-- <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""> -->
+        </div>
+    
+</body>
+</html>
