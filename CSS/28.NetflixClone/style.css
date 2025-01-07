@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    height: 200vh;
+}
+
+
+.main {
+    background-image: url(Assets/image/MainBackground.jpg);
+    /* background-position: center center; */
+    background-size: cover;
+    /* by applying this we can resize the background image according to the size of the window  */
+    height: calc(80vh+100px);
+    /* height: 60vh; */
+    background-repeat: no-repeat;
+    /* by applying this it has background-color black with opacity 0.6 to make the background-image darker */
+
+}
+
+.main .box {
+    width: 100%;
+    height: calc(80vh+100px);
+    /* height: 60vh; */
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 2;
+}
+
+
+
+nav {
+    max-width: 65vw;
+    height: 100px;
+    margin: auto;
+    color: white;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbut {
+    display: flex;
+    gap: 25px;
+
+}
+
+
+.lang {
+    padding: 8px 19px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.263);
+    border: 2px solid rgba(255, 255, 255, 0.414);
+    color: white;
+    font-weight: 600;
+}
+
+
+
+.sign {
+    padding: 9px;
+    background-color: rgb(229, 9, 20);
+    width: 90px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    border: 2px solid rgb(229, 9, 20);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.secbox {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+    padding: 15px;
+}
+
+.poster {
+    /* margin: auto; */
+    width: 60vw;
+    height: 40vh;
+    color: rgb(255, 255, 255);
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.posthead {
+    width: 35vw;
+    height: 25vh;
+    font-size: 69px;
+    text-align: center;
+    font-weight: 900;
+    font-family: system-ui;
+    line-height: 80px;
+}
+
+.ph1 {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    line-height: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.ph2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+.lastph {
+    width: 40vw;
+    height: 10vh;
+    color: rgb(255, 255, 255);
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.email {
+    background-color: rgba(0, 0, 0, 0.263);
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 14px;
+    width: max(200px,20vw);
+    padding: 10px 19px;
+}
+
+.email placeholder {
+    font-size: 10px;
+}
+
+
+.started {
+    display: flex;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 14px;
+    width: 218px;
+    padding: 15px 19px;
+    border: 2px solid rgb(229, 9, 20);
+    border-radius: 7px;
+    align-items: center;
+    gap: 21px;
+    font-family: system-ui;
+    font-weight: 800;
+}
+
+
+
+
+.pink {
+    width: 100%;
+    position: absolute;
+    top: 850px;
+    z-index: 4;
+    height: 80px;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: none;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
+
+.curveline {
+    width: 100%;
+    /* position: absolute;
+    top: 880px; */
+    z-index: 10;
+    height: 10px;
+    /* border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%; */
+    border-bottom: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+}
+
+
+.content {
+    background-color: black;
+    height: 50vh;
+
+}
+
+.contenthead {
+    padding: 20px;
+    width: 65vw;
+    margin: auto;
+    /* background-color: aqua; */
+    height: 120vh;
+}
+
+.ctext {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 20px;
+    color: white;
+}
+
+.options {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.options select {
+    padding: 7px 9px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 3px;
+    background-color: rgba(255, 251, 251, 0.133);
+    color: white;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px 0px;
+    /* background-color: aqua; */
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    background-color: black;
+    border-radius: 15px;
+    position: relative;
+
+}
+
+.c1 {
+    /* background-position: center center; */
+    background-image: url(Assets/image/movies/Movie1.png);
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: cover;
+    /* to object fit and position property to background image  */
+}
+
+.c2 {
+    background-image: url(Assets/image/movies/Movie2.webp);
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: cover;
+    /* to object fit and position property to background image  */
+}
+
+.c3 {
+    background-image: url(Assets/image/movies/Movie3.webp);
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: cover;
+    /* to object fit and position property to background image  */
+}
+
+.c4 {
+    background-image: url(Assets/image/movies/Movie4.webp);
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: cover;
+    /* to object fit and position property to background image  */
+}
+
+
+.rank {
+    line-height: 3px;
+    display: inline-block;
+    height: 30px;
+    position: absolute;
+    bottom: 50px;
+    left: -15px;
+    font-weight: 700;
+    color: rgb(0 0 0);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.848);
+    /* text-shadow: 0 0 15px rgb(0 0 0); */
+    font-size: 107px;
+}
+
+
+
+
+.reasonstext{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 40px 3px;
+    color: white;
+    width: 100%;
+    
+}
+
+
+.reasoncontainer{
+    display: flex;   
+    justify-content: space-around; 
+}
+
+.reasons{
+    width: 290px;
+    height: 350px;
+    /* background: linear-gradient(149deg, #192247 0%, #210e17 96.86%); */
+    border-radius: 10px;
+    /* margin: auto; */
+}
+
+.icon {
+    width: 72px;
+    height: 72px;
+    background-image: url('Assets/Icons/icon1.svg');
+    background-size: contain; /* Ensures the SVG scales inside the div */
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width :485px) {
+    nav {
+        max-width: 95vw;
+        padding: 10px;
+    }
+
+    .posthead {
+        width: 75vw;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .ph1 {
+        font-size: 16px;
+    }
+
+    .lastph {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .reasonstext{
+        text-align: center;
+    }
+
+
+
+
+}

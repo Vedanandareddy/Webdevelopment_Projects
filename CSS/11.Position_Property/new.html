@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity and Background</title>
+    <style>
+        .container {
+            position: relative; /* Establish stacking context */
+            height: 100vh;
+            width: 100%; /* Full width */
+            background-color: black; /* Black background */
+            opacity: 0.6; /* Makes the entire container semi-transparent */
+            z-index: 12;
+        }
+
+        .box {
+            position: absolute; /* Positioned independently within the container */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the box */
+            height: 200px;
+            width: 200px;
+            background-color: green; /* Green background */
+            z-index: 1; /* Appear above the container */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

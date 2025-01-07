@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css filter</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            /* filter: blur(10px); */
+            /* applies to all elements in the container  */
+
+        }
+
+        .container img {
+            width: 600px;
+        }
+
+        .apply {
+            /* filter: brightness(0.8); */
+            /* modifies the brightness of an element  */
+
+            /* filter: blur(10px); */
+            /* blurs element with specified value  */
+
+            /* filter: contrast(150%); */
+            /* adjust contrast of an element,the difference in color or brightness between different parts of an image:
+            High contrast: Images with a wide range of tones, from very dark to very light 
+            Low contrast: Images with a narrower range of tones, and tend to look soft and lack dimension */
+
+            /* filter: drop-shadow(16px 16px 20px blue); */
+            /* parameter bottom right blur and color of the shadow   */
+
+            /* filter: grayscale(20%); */
+            /* at 0% normal image and at 100% black and white image  */
+
+            /* filter: hue-rotate(180deg); */
+            /* rotates hue according to hue color cycle  */
+
+            /* filter: invert(50%); */
+            /* inverts the colors in the given element  */
+
+            /* filter: opacity(40%); */
+            /* at 0% element is transparent , at 100% element is fully visible  */
+
+            /* filter: saturate(20%); */
+            /* it defines the intensity of color in an element  */
+
+            /* filter: sepia(1); */
+            /* sepia is a tool that adds a warm, brown tint to an image to make it look vintage or nostalgic */
+
+            /* multiple filters can be applied  */
+            /* filter: contrast(185%) brightness(30%); */
+
+            /* Use no filter */
+            /* filter: none; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="apply"
+            src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
+            alt="">
+        <img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
+            alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident alias atque nam iure enim cupiditate
+            laudantium id amet officiis corrupti nesciunt laboriosam sunt corporis officia optio vitae, error dolores
+            nostrum recusandae quasi voluptate in rerum odio! Excepturi voluptates quod architecto adipisci, dignissimos
+            optio quisquam unde?</p>
+    </div>
+
+</body>
+
+</html>
