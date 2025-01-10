@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walking the Dom</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- DOM represents html as tree like structure accesed as objects  -->
+     <!-- 3 main types of nodes in the dom tree are 
+     text,comment,element nodes  -->
+
+     <!-- child nodes are nodes that are direct children of element  -->
+      <!-- siblings have same parent  -->
+
+
+     <!-- a text node is always leaf of a tree  -->
+      <!-- leaf is node with no children  -->
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+    </div>
+
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Harry</td>
+          <td>100</td>
+        </tr>
+      </table>
+      
+
+    <script src="script.js"></script>
+</body>
+</html>
