@@ -32,7 +32,7 @@ let j=0;
 // while loop 
 while(j<15){
     console.log(j);
-    i+=1;
+    j+=1;
 }
 
 
@@ -41,7 +41,35 @@ while(j<15){
 let k = 10;
 do {
     console.log(k)
-    i++;
+    k++;
 } while (k<6)
+
+
+
+const marks={
+    "rohan":86,
+    "tarun":56,
+    "sohail":64
+}
+
+
+
+marks.rohan=75;
+// assigning and manipulating done by using above convention 
+
+console.log("Marks of students")
+for (const key in marks) {
+    console.log(marks[key]);
+    // accesing is done by above convention 
+
+}
+
+console.log(marks[0])
+
+// for (let index = 0; index < ; index++) {
+//     const element = array[index];
+    
+// }
+
 
 
