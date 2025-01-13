@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hidel{
+            color: aqua;
+            display: flex;
+            background-color: bisque;
+        }
+
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red green black">Hey I am a box</div>
+        <div  id="hidel" hidden data-color="white" data-values="other" data-writtenby="vedananda" class="redbg yellow green"> I am a hidden div</div>
+        <!-- custom attributes can always be created but attributes starting with data are reserved for programmers use  -->
+       
+        <!-- if hidden property is given to an element then it is not visible -->
+        <div class="box">Hey I am a box</div>
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>
