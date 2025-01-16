@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            padding: 20px;
+            border: 2px solid black;
+            margin: 20px;
+            background-color: aqua;
+        }
+
+        .childcont {
+            padding: 20px;
+            border: 2px solid black;
+            margin: 20px;
+            background-color: cadetblue;
+        }
+
+        .child {
+
+            padding: 20px;
+            border: 2px solid black;
+            margin: 20px;
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="childcont">
+            <div class="child">
+                This is a child
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function rcolor() {
+            let c1 = Math.floor((Math.random() * 255));
+            let c2 = Math.floor((Math.random() * 255));
+            let c3 = Math.floor((Math.random() * 255));
+            return "rgb(" + c1 + "," + c2 + "," + c3 + ")"
+
+        }
+
+        let container = document.querySelector(".container")
+
+        
+        // let timeoutid=setTimeout(() => {
+        //     container.style.backgroundColor = rcolor()
+        // }, 1000);
+        // runs a fuction after a given timeout ,takes a function and timeout in ms
+
+       let intervalid= setInterval(() => {
+            // alert("hello")
+            container.style.backgroundColor = rcolor()
+        }, 1000);
+        // runs continuously in the interval of given time 
+
+        // to stop the execution we can use 
+        // clearInterval(intervalid);
+
+        // simillar for timeout
+        // clearTimeout(timeoutid)
+
+        // time id of the function is given 
+
+    </script>
+</body>
+
+</html>

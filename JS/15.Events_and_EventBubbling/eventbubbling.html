@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event bubbling</title>
+    <style>
+        .container{
+            padding: 20px;
+            border: 2px solid black;
+            margin: 20px;
+            background-color: aqua;
+        }
+        .childcont{
+            padding: 20px;
+            border: 2px solid black;
+            margin: 20px;
+            background-color:cadetblue;
+        }
+        .child{
+           
+            padding: 20px;
+            border: 2px solid black;
+            margin: 20px;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="childcont">
+            <div class="child">
+                This is a child 
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let container=document.querySelector(".container")
+        let childcont=document.querySelector(".childcont")
+        let child=document.querySelector(".child")
+
+        container.addEventListener("click",(e)=>{
+          
+            alert("container has been clicked")
+        })
+        childcont.addEventListener("click",(e)=>{
+            e.stopImmediatePropagation()
+            alert("childcont has been clicked")
+        })
+        child.addEventListener("click",(e)=>{
+            e.stopPropagation();
+            // this stops the propagation event to its parent elements ,here e is the event
+            alert("child has been clicked")
+        })
+
+        // if child gets clicked then it also considered that its parent element is clicked and its parent has also been clicked  which propagates the events to its parents and perform appropriate actions based on its listeners  this is called as event bubbling and this propagation can be stopped by  e.stoppropagation() where e is the event 
+    </script>
+    
+</body>
+</html>
