@@ -3,6 +3,7 @@ async function Myname() {
     return "Vedananda"
 }
 // when a fuction is declared async it wraps its return value into promise 
+// by default async functions allways return promise if non promised  is returned it wraps it into a promise and resolves it with that value  
 // and async fuctions allow await inside them 
 
 // console.log( Myname());
@@ -25,6 +26,7 @@ async function Myname() {
 async function fetchdata(url) {
 
     let response = await fetch(url)
+    // fetch is a non blocking async function , it returns a promise but promise is not resolved if executed without awaiting it returns an unresolved promise at first if not awaited 
     let json =  await response.json();
     // .json() is a method to parse json  data from the http response 
     return json;

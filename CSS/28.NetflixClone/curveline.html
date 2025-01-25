@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curved Border</title>
+    <style>
+        .curved-box {
+            width: 300px;
+            height: 150px;
+            background-color: lightblue;
+            border: 5px solid #000;
+            border-radius: 50px;
+            /* Adjust this value to control the curve */
+        }
+
+        .trending-now {
+            position: relative;
+            padding-top: 10px;
+            /* Adjust as needed */
+            font-size: 24px;
+            /* Adjust as needed */
+            font-weight: bold;
+            color: #333;
+            /* Adjust text color as needed */
+        }
+
+        .trending-now::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            /* Adjust the width of the border */
+            height: 4px;
+            /* Adjust the thickness of the border */
+            background-color: #ff0000;
+            /* Adjust the color of the border */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="trending-now">
+        Trending Now
+    </div>
+</body>
+
+</html>

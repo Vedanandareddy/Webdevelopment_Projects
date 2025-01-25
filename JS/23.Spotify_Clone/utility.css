@@ -1,0 +1,23 @@
+.blackbg{
+    background-color: black;
+}
+
+.greybg{
+    background-color: #202020;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.p1{
+    padding: 10px;
+}
+
+.br1{
+    border-radius: 10px;
+}
+
+.m1{
+    margin: 10px;
+}

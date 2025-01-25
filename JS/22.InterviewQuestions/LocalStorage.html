@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+
+<body>
+    <button class="btn">Create a Note</button>
+    <div class="note"></div>
+
+    <!-- Local storage is a web browser feature that allows developers to store small amounts of data (key-value pairs) directly on a user's browser. Unlike cookies, the data in local storage is not sent to the server with every HTTP request. This makes it an efficient way to store data that needs to persist across user sessions
+ -->
+
+    <!-- Basic Methods
+    Method Description
+    localStorage.setItem(key, value) Stores a value under the specified key.
+    localStorage.getItem(key) Retrieves the value associated with the given key.
+    localStorage.removeItem(key) Removes the key-value pair for the given key.
+    localStorage.clear() Clears all data from local storage.
+    localStorage.key(index) Returns the key at the specified index.
+    localStorage.length -->
+
+
+    <!-- Only strings can be stored. Non-string data types (like arrays or objects) must be converted to a string using JSON.stringify() and then parsed back with JSON.parse(). -->
+
+
+    <script>
+        document.body.querySelector(".btn").addEventListener("click",()=>{
+           let  div=document.querySelector(".note")
+            if(localStorage.getItem("note")){
+                div.innerHTML=localStorage.getItem("note")
+            }
+            else{
+                let no=prompt("Enter the note number")
+                let a=prompt("Enter the note you want to write")
+                div.innerHTML=a
+                localStorage.setItem("note",a)
+            }
+        })
+
+        // document.write("<div>This is Vedananda</div>")
+        // writes directly to html page in the body
+        // document.write("<div>This is Veda</div>")
+        // if(localStorage.getItem("name")){
+        //     document.write("Welcome "+localStorage.getItem("name"))
+        // }
+        // else{
+        //     let name=prompt("Enter your name");
+        //     document.write("Welcome "+name)
+        //     localStorage.setItem("name" ,name)
+        //     // for storing objects they have to be conveted to string as only strings can be stored in the local storage 
+        //     const obj={
+        //         "rohan":89,
+        //         "Manoj":56,
+        //         "Srihan":45
+        //     }
+        //     localStorage.setItem("obj",JSON.stringify(obj))
+        // }
+
+        // if(localStorage.getItem("obj")){
+        //     let obj=JSON.parse( localStorage.getItem("obj"))
+        //     // this converts a string to object 
+        //     console.log(obj);
+        //     console.log(localStorage.length);
+            
+            
+        // }
+
+        
+    </script>
+
+</body>
+
+</html>

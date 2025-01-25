@@ -34,41 +34,62 @@ function dots(x){
 
 
 async function main(){
+    let div;
+    div=document.createElement("div")
+    box.append(div)
 
     let time;
     let value;
     let intid;
-    time=1+Math.floor(Math.random()*7);
+    time=2+Math.floor(Math.random()*7);
     console.log(time)
     // box.innerHTML="Initializing Hacking"+ dots(3)
     intid=setInterval(async () => {
         let i=0
         for(;i<4;i++){
             let val= await waitfor(100);
-            box.innerHTML="Initializing Hacking"+ dots(i);
+            div.innerHTML="Initializing Hacking"+ dots(i);
         }
     }, 1200);
     value=await waitfor(time*1000)
     // by using await it waits for the function to settle  the promise before executing other code 
     clearInterval(intid)
 
+    await waitfor(1000)
+    div=document.createElement("div")
+    div.innerHTML="Initialized Hacking"
+    box.append(div)
+    await waitfor(1000)
+
+    div=document.createElement("div")
+    box.append(div)
+
 
 
 
     // box.innerHTML="Reading your Files..."
-    time=1+Math.floor(Math.random()*7);
+    time=2+Math.floor(Math.random()*7);
     console.log(time);
     
     intid=setInterval(async () => {
         let i=0
         for(;i<4;i++){
-            let val= await waitfor(100);
-            box.innerHTML="Reading your Files"+ dots(i);
+            let val= await waitfor(200);
+            div.innerHTML="Reading your Files"+ dots(i);
         }
     }, 1000);
 
     value=await waitfor(time*1000)
     clearInterval(intid)
+
+    await waitfor(1000)
+    div=document.createElement("div")
+    div.innerHTML="Files Read"
+    box.append(div)
+    await waitfor(1000)
+
+    div=document.createElement("div")
+    box.append(div)
 
 
 
@@ -81,12 +102,21 @@ async function main(){
         let i=0
         for(;i<4;i++){
             let val= await waitfor(100);
-            box.innerHTML="Password files Detected"+ dots(i);
+            div.innerHTML="Password files Detected"+ dots(i);
         }
     }, 1000);
 
     value=await waitfor(time*1000)
     clearInterval(intid)
+
+    await waitfor(1000)
+    div=document.createElement("div")
+    div.innerHTML="Password Files Copied"
+    box.append(div)
+    await waitfor(1000)
+
+    div=document.createElement("div")
+    box.append(div)
 
 
 
@@ -97,12 +127,24 @@ async function main(){
         let i=0
         for(;i<4;i++){
             let val= await waitfor(100);
-            box.innerHTML="Sending all passwords and personal files to server"+ dots(i);
+            div.innerHTML="Sending all passwords and personal files to server"+ dots(i);
         }
     }, 1000);
 
     value=await waitfor(time*1000)
     clearInterval(intid)
+
+    value=await waitfor(time*1000)
+    clearInterval(intid)
+
+    await waitfor(1000)
+    div=document.createElement("div")
+    div.innerHTML="Password Files and Personal Data Sent"
+    box.append(div)
+    await waitfor(1000)
+
+    div=document.createElement("div")
+    box.append(div)
 
 
 
@@ -113,15 +155,19 @@ async function main(){
         let i=0
         for(;i<4;i++){
             let val= await waitfor(100);
-            box.innerHTML="Cleaning up"+ dots(i);
+            div.innerHTML="Cleaning up"+ dots(i);
         }
     }, 1000);
 
     value=await waitfor(time*1000)
     clearInterval(lintid)
-    
-    box.innerHTML="Your Computer is Hacked"
-    console.log("Completed")
+
+    await waitfor(1000)
+    div=document.createElement("div")
+    div.innerHTML="Your Computer is Hacked"
+    box.append(div)
+    await waitfor(1000)
+
 
 }
 

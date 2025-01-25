@@ -34,11 +34,16 @@
             /* delay after which transition should happen  */
 
             /* short hand notation for above transition property is  */
-            transition: background-color 4s ease-in-out 2s, transform 4s ease-in-out 2s;
+            transition: background-color 1s ease-in-out 0s, transform 1s ease-in-out 0s;
             /* while setting multiple properties they are seperated by comma like above  */
 
 
 
+        }
+
+        .box:hover{
+            background-color: blue;
+            transform: scale(1.5);
         }
 
         .translate{
@@ -55,7 +60,7 @@
     <!-- makes the transition from one state to another state smooth and visually appealing  -->
 
     <div class="container">
-        <div class="box translate">box</div>
+        <div class="box ">box</div>
     </div>
     
 </body>

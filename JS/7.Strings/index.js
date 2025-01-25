@@ -74,7 +74,7 @@ console.log(sm)
 let w=" Wolverine   "
 console.log(w)
 let sw=w.trim()
-// removes white spaces 
+// removes white spaces  from beginning and end 
 console.log(sw)
 
 // individual charecters in a string can be accesed by using index which starts form 0 
