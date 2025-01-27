@@ -102,3 +102,7 @@ console.log(word.startsWith("Ana"))
 console.log(word.endsWith("y"))
 // checks if its ends with 
 
+
+
+
+

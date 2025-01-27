@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+</head>
+
+<body>
+
+    <script>
+        async function postrequest() {
+            const newUser = {
+                name: "Charlie",
+            };
+            let result=await fetch("/", {
+                method: "POST", // HTTP method
+                headers: {
+                    "Content-Type": "application/json", // Specify JSON format
+                },
+                body: JSON.stringify(newUser), // Convert object to JSON
+            })
+            let b = await result.text();
+            console.log(b)
+        }
+        postrequest()
+    </script>
+</body>
+
+</html>
