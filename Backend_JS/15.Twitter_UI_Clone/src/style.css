@@ -1,0 +1,22 @@
+/* Dark Scrollbar Styling */
+
+/* The scrollbar itself */
+::-webkit-scrollbar {
+    width: 10px; /* Adjust the width of the scrollbar */
+  }
+  
+  /* The draggable thumb (the part the user moves) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #000000; /* Dark gray for the thumb */
+    border-radius: 10px; /* Rounded corners */
+    border: 3px solid #000000; /* Dark border to make it pop slightly */
+  }
+  
+  /* The track (the area the thumb moves along) */
+  ::-webkit-scrollbar-track {
+    background-color: #000000; /* Dark track color */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+
+  

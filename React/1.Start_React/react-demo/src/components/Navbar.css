@@ -1,0 +1,18 @@
+.nav{
+    background-color: bisque;
+    padding: 25px;
+}
+
+.nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+.nav li{
+    list-style: none;
+}
+
+.bg_black{
+    background-color: black;
+    color: white;
+}
