@@ -47,3 +47,19 @@ Compression
 Custom Logic
 
 It allows you to modularize your application's logic and keep your route handlers clean and focused.
+
+
+
+
+🎯 Conclusion: Which One to Use?
+Use Case	Middleware to Use
+API receiving JSON data (React, Angular, Postman, etc.)	express.json()
+HTML form submission (without JavaScript)	express.urlencoded({ extended: true })
+Complex form data with nested objects	express.urlencoded({ extended: true })
+Handling both JSON and form data	Use both: express.json() and express.urlencoded({ extended: true })
+🔹 If your app needs to support both JSON and form submissions, you can use both middlewares together:
+
+js
+Copy
+Edit
+

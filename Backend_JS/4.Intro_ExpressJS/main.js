@@ -25,8 +25,7 @@ app.get('/:slug/:second', (request, res) => {
     console.log(request.params)
     // url also contains query which are written after "?" these can be accessed and multiple query parameters written using & as seperator 
     console.log(request.query)
-
-
+    
   // logic to fetch from db 
   res.send(`Hello World! you are in  ${request.params.slug} and  ${request.params.second}`)
   //   here res is the response sent to the server when this request is submitted 

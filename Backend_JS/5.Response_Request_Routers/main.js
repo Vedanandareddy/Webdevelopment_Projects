@@ -17,7 +17,7 @@ app.use('/blog', blog)
 
 
 // get request is a default request  but the capabilities of it are limited 
-// we can send sensitive information using get request as  it is visible in the url and the data the get request can send is limited so we use other type of requests
+// we can't  send sensitive information using get request as  it is visible in the url and the data the get request can send is limited so we use other type of requests
 
 // POST - Send data to the server (e.g., for creating new resources).
 // PUT - Update an existing resource on the server.
@@ -29,7 +29,6 @@ app.get('/', (req, res) => {
   // console.log( req);
   res.send('This is a post request ')
 }).put('/', (req, res) => {
-  
   res.send('This is a put request')
 }).delete('/', (req, res) => {
   res.send('This is a delete request ')

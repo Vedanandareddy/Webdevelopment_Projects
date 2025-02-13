@@ -1,0 +1,2 @@
+when  we want to access in a nested component we can use prop drillin by passing to through parent components as props 
+this process of passing through parent components can be complex so to avoid this we use usecontext 

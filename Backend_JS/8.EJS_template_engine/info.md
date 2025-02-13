@@ -9,6 +9,8 @@ ejs helps  in making templates and sending data to the page and place them in ou
 
 This assumes a views directory containing an index.ejs page.
 
+In your Express app, res.render('index', {...}) works even though index is not explicitly defined in your JavaScript code because Express automatically looks for an index.ejs file inside the views directory when you call res.render('index').
+
 {siteName,searchText} this automatically creates and object  {siteName:siteName,searchText:searchText} 
 
 template engine ejs uses ejs format instead of html 
